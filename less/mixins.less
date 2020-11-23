@@ -1,3 +1,8 @@
+//SELECTION
+.selection(@rules) {
+    &::selection {@rules();}
+    &::-moz-selection {@rules();}
+}
 //CENTER ABSOLUTE
 .center-x {
     right: 0;
@@ -19,16 +24,8 @@
 
 //PLACEHOLDER
 .placeholder(@rules) {
-    &::-webkit-input-placeholder {
-        @rules();
-    }
-    &:-moz-placeholder {
-        @rules();
-    }
-    &::-moz-placeholder {
-        @rules();
-    }
-    &:-ms-input-placeholder {
-        @rules();
-    }
+    &::-webkit-input-placeholder {@rules();}
+    &:-moz-placeholder {@rules();}
+    &::-moz-placeholder {@rules();}
+    &:-ms-input-placeholder {@rules();}
 }
