@@ -1,0 +1,34 @@
+//CENTER ABSOLUTE
+.center-x {
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.center-y {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.center-all {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+//PLACEHOLDER
+.placeholder(@rules) {
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
